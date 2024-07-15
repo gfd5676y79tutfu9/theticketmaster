@@ -1,165 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ticketmaster Clone</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .popup {
-      display: none;
-    }
-    .fixed-bottom {
-      display: none;
-    }
-    @media (max-width: 768px) {
-      .fixed-bottom {
-        display: flex;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ticketmaster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .floating-call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 50;
+        }
+    </style>
 </head>
-<body class="relative">
-  <!-- Header -->
-  <header class="bg-blue-900 text-white p-4 text-center">
-    We Are a Secondary Marketplace, Not A Box Office Or Venue. Ticket Prices May Be Above Or Below Face Value.
-  </header>
+<body class="bg-white text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="bg-gray-800 text-white p-4 flex justify-center md:justify-center lg:justify-center">
-    <ul class="flex space-x-4 md:space-x-8 lg:space-x-12">
-      <li><a href="#" class="hover:underline">Home</a></li>
-      <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-      <li><a href="#" class="hover:underline">Ticketmaster Coupon Code 2024</a></li>
-      <li><a href="#" class="hover:underline">Terms And Policy</a></li>
-      <li><a href="#" class="hover:underline">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="relative">
-    <div class="absolute inset-0 z-0">
-      <div class="bg-cover bg-center h-screen" style="background-image: url('/path_to_your_image1.jpg');"></div>
-      <div class="bg-cover bg-center h-screen" style="background-image: url('/path_to_your_image2.jpg');"></div>
+    <div class="bg-blue-800 text-white p-4 text-center">
+        We Are a Secondary Marketplace, Not A Box Office Or Venue. Ticket Prices May Be Above Or Below Face Value.
     </div>
-    <div class="relative z-10 flex items-center justify-center h-screen bg-black bg-opacity-50 text-white">
-      <h1 class="text-5xl font-bold">Who We Are</h1>
-    </div>
-  </section>
 
-  <!-- About Us Section -->
-  <section class="p-8">
-    <h2 class="text-4xl font-bold mb-4">About Us</h2>
-    <p class="text-lg mb-6">We are a platform for live entertainment, and our goal is to put our fans first. We've set up our company so that attendees, performers, and teams have access to all the facilities and services they need for a great event.</p>
-    <p class="text-lg">We make it easy for fans to find out everything there is to know about their favorite events and enable them to attend them as easily as possible with the help of our ticket-rating engine and event experience platform. Thanks to these qualities and more, we have the best reputation as a ticket supplier.</p>
-  </section>
+    <header class="bg-gray-900 text-white">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-lg font-bold">Ticketmaster</div>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="#" class="hover:underline">Ticketmaster Coupon Code 2024</a></li>
+                <li><a href="#" class="hover:underline">Terms And Policy</a></li>
+                <li><a href="#" class="hover:underline">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Extraordinary Experiences and Core Values -->
-  <section class="p-8 flex flex-col md:flex-row justify-between">
-    <div class="md:w-1/2 p-4">
-      <h3 class="text-2xl font-bold mb-4">Extraordinary Experiences</h3>
-      <p class="text-lg">Our corporate platform enables teams, venues, and events to grow their businesses successfully while giving all fans the top-notch support they deserve. Since the beginning, we've had the privilege of working with some of the most well-known names in entertainment and sports.</p>
-    </div>
-    <div class="md:w-1/2 p-4">
-      <h3 class="text-2xl font-bold mb-4">Our Core Values</h3>
-      <p class="text-lg">We made sure that every service we offer is reliable, safe, secure, and simple to use. Since we are aware that our customers want a quick and easy way to order tickets, we have made sure that our website is easy to use and browse. Our easy-to-use platform provides every feature you need to swiftly and easily buy tickets for your event.</p>
-    </div>
-  </section>
+    <section class="relative">
+        <img src="https://via.placeholder.com/1200x400" alt="Who We Are" class="w-full">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-4xl font-bold text-white">Who We Are</h1>
+        </div>
+    </section>
 
-  <!-- Contact Info -->
-  <section class="p-8 bg-gray-200">
-    <h3 class="text-2xl font-bold mb-4">We're Ready, Let's Talk.</h3>
-    <div class="flex flex-col md:flex-row justify-between">
-      <div class="mb-4 md:mb-0">
-        <h4 class="text-lg font-semibold">Email Us</h4>
-        <p>info@theticketmasters.online</p>
-      </div>
-      <div>
-        <h4 class="text-lg font-semibold">Call Us</h4>
-        <p>+1 (800) 314-1384</p>
-      </div>
-    </div>
-  </section>
+    <section class="container mx-auto my-8 p-4">
+        <h2 class="text-3xl font-bold mb-4">About Us</h2>
+        <p class="mb-4">
+            We are a platform for live entertainment, and our goal is to put our fans first. We've set up our company so that attendees, performers, and teams have access to all the facilities and services they need for a great event.
+        </p>
+        <p class="mb-4">
+            We make it easy for fans to find out everything there is to know about their favourite events and enable them to attend them as easily as possible with the help of our ticket-rating engine and event experience platform. Thanks to these qualities and more, we have the best reputation as a ticket supplier.
+        </p>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white p-4 text-center">
-    <p>Disclaimer: We are a secondary marketplace. Not a box office or a venue. Ticket prices may vary as per the value, organizers, and availability of tickets. If the ticket is canceled at our end or if the show gets canceled by the organizer, then the customer is entitled to entire compensation of ticket amount. If the customer cancels the ticket at his end and intimates us timely then after following a certain procedure customer can get his refund of the canceled ticket.</p>
-    <p>&copy; 2024. All Rights Reserved.</p>
-  </footer>
+    <section class="container mx-auto my-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <h3 class="text-2xl font-bold mb-4">Extraordinary Experiences</h3>
+            <p>
+                Our corporate platform enables teams, venues, and events to grow their businesses successfully while giving all fans the top-notch support they deserve. Since the beginning, we've had the privilege of working with some of the most well-known names in entertainment and sports.
+            </p>
+        </div>
+        <div>
+            <h3 class="text-2xl font-bold mb-4">Our Core Values</h3>
+            <p>
+                We made sure that every service we offer is reliable, safe, secure, and simple to use. Since we are aware that our customers want a quick and easy way to order tickets, we have made sure that our website is easy to use and browse. Our easy-to-use platform provides every feature you need to swiftly and easily buy tickets for your event.
+            </p>
+        </div>
+    </section>
 
-  <!-- Call Button for Computer -->
-  <div class="fixed right-4 bottom-4 hidden md:block">
-    <button class="bg-green-500 text-white p-4 rounded-full shadow-lg" onclick="window.location.href='tel:+18003141384'">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1M3 6h1M3 14h1M5 6h1M5 10h1M5 14h1M7 10h10M7 6h10M7 14h10M9 10h6M9 6h6M9 14h6" />
-      </svg>
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto p-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">We're Ready, Let's Talk.</h2>
+            <p>Email Us: <a href="mailto:info@ticketmasters.online" class="text-blue-600 hover:underline">info@ticketmasters.online</a></p>
+            <p>Call Us: <a href="tel:+18003141384" class="text-blue-600 hover:underline">+1 (800) 314-1384</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white text-center p-4">
+        <p class="text-sm">Disclaimer: We are a secondary marketplace. Not a box office or venue. Ticket price may vary as per the value, organizers, and availability of tickets. If the ticket is cancelled at our end or if the show gets cancelled by the organizer, then the customer is entitled for entire compensation of ticket amount. If customer cancels the ticket at his end and intimates us timely then after following a certain procedure customer can get his refund of cancelled ticket.</p>
+        <p class="mt-4">&copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <button class="floating-call-button bg-green-500 text-white p-4 rounded-full shadow-lg" id="callButton">
+        Call Now
     </button>
-  </div>
 
-  <!-- Call Button for Mobile -->
-  <div class="fixed-bottom bg-green-500 text-white p-4 flex justify-center items-center md:hidden">
-    <button class="text-white" onclick="window.location.href='tel:+18003141384'">
-      Call Now
-    </button>
-  </div>
-
-  <!-- Popup -->
-  <div id="popup" class="popup fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-    <div class="bg-white p-8 rounded-lg shadow-lg flex">
-      <div class="w-1/2">
-        <img src="/path_to_your_image.jpg" alt="Popup Image" class="h-full w-full object-cover rounded-l-lg">
-      </div>
-      <div class="w-1/2 p-4 flex flex-col justify-center items-center">
-        <button class="absolute top-2 right-2 text-gray-600 hover:text-gray-900" onclick="hidePopup()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-        <p class="text-lg font-semibold mb-4">Call Us Now!</p>
-        <button class="bg-green-500 text-white p-4 rounded-lg" onclick="window.location.href='tel:+18003141384'">Call Now</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script>
-    // Handle hero section image slider
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.hero img');
-    const totalImages = images.length;
-
-    function showNextImage() {
-      images[currentIndex].classList.remove('opacity-100');
-      currentIndex = (currentIndex + 1) % totalImages;
-      images[currentIndex].classList.add('opacity-100');
-    }
-
-    setInterval(showNextImage, 5000);
-
-    // Handle popup
-    function showPopup() {
-      document.getElementById('popup').style.display = 'flex';
-    }
-
-    function hidePopup() {
-      document.getElementById('popup').style.display = 'none';
-    }
-
-    window.onload = showPopup;
-
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > document.body.scrollHeight * 0.25) {
-        showPopup();
-      }
-    });
-
-    // Handle menu for mobile
-    const menuToggle = document.querySelector('#menu-toggle');
-    const menu = document.querySelector('#menu');
-
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
+    <script>
+        function adjustCallButton() {
+            const callButton = document.getElementById('callButton');
+            if (window.innerWidth < 768) {
+                callButton.style.position = 'fixed';
+            } else {
+                callButton.style.position = 'absolute';
+            }
+        }
+        window.addEventListener('resize', adjustCallButton);
+        window.addEventListener('load', adjustCallButton);
+    </script>
 </body>
 </html>
