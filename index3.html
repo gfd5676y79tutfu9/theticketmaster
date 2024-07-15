@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketmaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .floating-call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFD700;
+            padding: 15px;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        .mobile-call-button {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #28a745; /* Green color */
+            text-align: center;
+            padding: 10px 0;
+            color: white;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .floating-call-button {
+                display: none;
+            }
+        }
+        @media (min-width: 769px) {
+            .mobile-call-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-900 text-white text-center p-4">
+        <div>We Are a Secondary Marketplace, Not A Box Office Or Venue. Ticket Prices May Be Above Or Below Face Value.</div>
+    </header>
+
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="block md:hidden">
+                <button id="menu-toggle" class="text-blue-900 font-bold">Menu</button>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-blue-900 font-bold">About</a>
+                <a href="#" class="text-blue-900 font-bold">Privacy Policy</a>
+                <a href="#" class="text-blue-900 font-bold">Ticketmaster Coupon Code 2024</a>
+                <a href="#" class="text-blue-900 font-bold">Terms And Policy</a>
+                <a href="#" class="text-blue-900 font-bold">Contact</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <a href="#" class="block text-blue-900 font-bold p-4">About</a>
+            <a href="#" class="block text-blue-900 font-bold p-4">Privacy Policy</a>
+            <a href="#" class="block text-blue-900 font-bold p-4">Ticketmaster Coupon Code 2024</a>
+            <a href="#" class="block text-blue-900 font-bold p-4">Terms And Policy</a>
+            <a href="#" class="block text-blue-900 font-bold p-4">Contact</a>
+        </div>
+    </nav>
+
+    <section class="bg-cover bg-center h-64" style="background-image: url('https://your-image-url.com');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">Book Your Ticket!</h1>
+                <p class="mb-4">Refund And Rebooking Are Available Now For Any Cancelled Or Postponed Events From Ticketmaster Free. Get Your Queries Answers Instantly.</p>
+                <button class="bg-yellow-500 text-black px-4 py-2 rounded">CALL US NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Do you tend to live in the present?</h2>
+            <p class="text-lg mb-4">If so, we can arrange tickets for the best live performances. It is clear that COVID-19 has impacted almost every aspect of life. By the month of March 2020, the virus had infected more than 100 countries, leading the World Health Organization to declare a global pandemic. Soon after, there were lockdowns, imposed travel restrictions, and “social isolation” measures. But, as we make a fresh start, we have developed a platform that makes it simple to purchase tickets for your preferred live events. You can depend on us for the best and hassle-free experience throughout, whether it is for concerts, sports, stand-up, or even at the theatre.</p>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">UPCOMING EVENTS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Concerts -->
+                <div class="bg-white shadow-md p-6 rounded">
+                    <h3 class="text-2xl font-bold mb-4">Concert</h3>
+                    <ul class="text-left list-disc list-inside">
+                        <li>Tickets for Joe Russo's Nearly Dead Saint Louis, Missouri, The Pageant</li>
+                        <li>Elton John Madison Square Garden New York, NY</li>
+                        <li>Jenny Lewis Madison Square Garden, New York, NY</li>
+                        <li>Chicago Tickets, Pechanga Resort & Casino Center, Temecula, CA</li>
+                        <li>Usher - The Vegas Residency The Colosseum at Caesars Palace - Las Vegas, NV</li>
+                    </ul>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">View More</button>
+                </div>
+                <!-- Sports -->
+                <div class="bg-white shadow-md p-6 rounded">
+                    <h3 class="text-2xl font-bold mb-4">Sports</h3>
+                    <ul class="text-left list-disc list-inside">
+                        <li>Bojangles Coliseum, Pittsburgh, Pennsylvania, Pittsburgh Improv</li>
+                        <li>Brooklyn, New York, Barclays Center, Legends Classics</li>
+                        <li>New England Patriots at New York Giants MetLife Stadium in East Rutherford, New Jersey</li>
+                        <li>New York Yankees vs. Baltimore Orioles Yankee Stadium Bronx, NY</li>
+                        <li>Dunkin Donuts Center, Providence, RI, Monster Jam tickets</li>
+                        <li>Tickets to the Belmont Stakes Elmont, NY’s Belmont Park</li>
+                    </ul>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">View More</button>
+                </div>
+                <!-- Art & Theater -->
+                <div class="bg-white shadow-md p-6 rounded">
+                    <h3 class="text-2xl font-bold mb-4">Art & Theater</h3>
+                    <ul class="text-left list-disc list-inside">
+                        <li>SIX (New York, NY) Brooks Atkinson Theatre, New York, NY</li>
+                        <li>ubHub - The Ticket Marketplace for Fans Tickets for the musical “Frozen” in Minneapolis The Orpheum Theatre in Minneapolis, Minnesota</li>
+                        <li>Tickets for the Dave Chappelle Documentary at the Hollywood Bowl are untitled.</li>
+                        <li>tickets for Dave Chappelle's documentary are untitled; Hollywood Bowl, Hollywood, California</li>
+                        <li>Milwaukee, Wisconsin, United States, Uihlein Hall at Marcus Center for the Performing Arts, Beautiful Woman tickets</li>
+                    </ul>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">View More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What drives our business model</h2>
+            <p class="text-lg mb-4">You are the most crucial component of our company! You-the fans. Yes. As a platform for live entertainment, we’ve redesigned ticketing by giving teams, fans, and venues precedence. We make it possible for teams, venues, and events to easily connect their target audiences as well as fans to just take pleasure in experiences by creating a new, open entertainment industry.</p>
+            <p class="text-lg">We are aware that attending an event is unlike anything else and leaves you wanting more. So, we have made it our mission to make it simple and frequent for you to get tickets to your favorite events. We are working around the clock to improve your event discovery experience and make your stay at the events enjoyable.</p>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Get Your Tickets Now</h2>
+            <form class="max-w-md mx-auto bg-white shadow-md p-8 rounded">
+                <div class="mb-4">
+                    <label class="block text-left mb-2 font-bold" for="name">Name</label>
+                    <input class="w-full px-3 py-2 border rounded" type="text" id="name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-left mb-2 font-bold" for="email">Email</label>
+                    <input class="w-full px-3 py-2 border rounded" type="email" id="email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-left mb-2 font-bold" for="numbers">Numbers</label>
+                    <input class="w-full px-3 py-2 border rounded" type="text" id="numbers">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-left mb-2 font-bold" for="message">Message</label>
+                    <textarea class="w-full px-3 py-2 border rounded" id="message" rows="4"></textarea>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Have peace of mind with our secure payment process</h2>
+            <p class="text-lg mb-4">With the ticketing industry still evolving, we wanted to ensure that all the ticketing services we offer are safe, secure, reliable, and easy to use. We know that our customers are looking for a quick and easy way to book tickets, so we’ve made sure that our website is easy to use and navigate. Our easy-to-use platform offers all the essential features that you need to easily book tickets for your events. With our secure payment system, you can have peace of mind</p>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Top Artist</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white shadow-md p-4 rounded">
+                    <img class="w-full h-48 object-cover rounded" src="https://your-artist-image-url.com" alt="Artist 1">
+                    <h3 class="text-xl font-bold mt-4">Artist 1</h3>
+                </div>
+                <div class="bg-white shadow-md p-4 rounded">
+                    <img class="w-full h-48 object-cover rounded" src="https://your-artist-image-url.com" alt="Artist 2">
+                    <h3 class="text-xl font-bold mt-4">Artist 2</h3>
+                </div>
+                <div class="bg-white shadow-md p-4 rounded">
+                    <img class="w-full h-48 object-cover rounded" src="https://your-artist-image-url.com" alt="Artist 3">
+                    <h3 class="text-xl font-bold mt-4">Artist 3</h3>
+                </div>
+                <div class="bg-white shadow-md p-4 rounded">
+                    <img class="w-full h-48 object-cover rounded" src="https://your-artist-image-url.com" alt="Artist 4">
+                    <h3 class="text-xl font-bold mt-4">Artist 4</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white text-center p-4">
+        <div class="container mx-auto">
+            <p class="text-sm">Disclaimer: We are a secondary market place. Not a box office or venue. Ticket price may vary as per the value, organizers and availability of tickets. If the ticket is cancelled at our end or if the show gets cancelled by the organizer, then the customer is entitled for entire compensation of ticket amount. If customer cancels the ticket at his end and intimate us timely then after following a certain procedure customer can get his refund of cancelled ticket.</p>
+            <p class="text-sm mt-2">&copy; 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="tel:+1234567890" class="floating-call-button text-white text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1l1-2h4l1 2h5.5l1.286 5H13l1 2H6.5l-1-2H2.5l.5-1h3.571M3 10h2m2 0h5.5m-2-2h1l1 2M6.5 10L5.5 8m-1 2L4 8m-1 2h2" />
+        </svg>
+    </a>
+
+    <a href="tel:+1234567890" class="mobile-call-button">Call Now</a>
+
+    <script>
+        // Menu toggle for mobile view
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
